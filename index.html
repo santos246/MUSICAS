@@ -1,0 +1,192 @@
+﻿
+
+
+<center>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2><a name="INÍCIO" id="ancora">
+<font color="red">INÍCIO</font>
+</a></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="BUSCA AQUI" title="VIDEOS E FILMES">
+
+<ul id="myUL">
+<!--------------------------------------
+Depois o link para ir  ancora será assim:
+
+<a href="#ancora">ir   ancora </a>
+
+<a name="ancora" id="ancora"></a>
+
+Se quiseres usar uma ancora noutra página fazes assim:
+
+<a href="ancora.html#ancora">ir   ancora de outra página </a>
+-------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<li><a href="#NOME">IR P/ NOME(CATEGORIA)<br/>
+<img src="
+IMAGEM
+" width="40px"></a></a></li>
+<!------------------------------------------------------------------->
+<li><a href="#NOME">IR P/ NOME(CATEGORIA)<br/>
+<img src="
+IMAGEM
+" width="40px"></a></a></li>
+<!------------------------------------------------------------------->
+<li><a href="#NOME">IR P/ NOME(CATEGORIA)<br/>
+<img src="
+IMAGEM
+" width="40px"></a></a></li>
+<!------------------------------------------------------------------->
+
+
+
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<!------------------------------------------------------------------->
+<h2><a name="NOME" id="ancora">
+NOME
+</a></h2><a href="PASTA/
+NOME
+.html" target="_blank"><img src="
+IMAGEM
+" width="200px"></a><br/><textarea rows="10" cols="60" maxlength="1500">
+SOBRE
+</textarea><br/><a href="#INÍCIO"><h3><font color="red">INÍCIO</font></h3></a><HR WIDTH="80%"><HR NOSHADE SIZE="3" color="#00FF00"><HR NOSHADE SIZE="8"><HR NOSHADE SIZE="3" color="red"><HR WIDTH="80%">
+<!--------------------------------------------------------------->
+<h2><a name="NOME" id="ancora">
+NOME
+</a></h2><a href="PASTA/
+NOME
+.html" target="_blank"><img src="
+IMAGEM
+" width="200px"></a><br/><textarea rows="10" cols="60" maxlength="1500">
+SOBRE
+</textarea><br/><a href="#INÍCIO"><h3><font color="red">INÍCIO</font></h3></a><HR WIDTH="80%"><HR NOSHADE SIZE="3" color="#00FF00"><HR NOSHADE SIZE="8"><HR NOSHADE SIZE="3" color="red"><HR WIDTH="80%">
+<!--------------------------------------------------------------->
+<h2><a name="NOME" id="ancora">
+NOME
+</a></h2><a href="PASTA/
+NOME
+.html" target="_blank"><img src="
+IMAGEM
+" width="200px"></a><br/><textarea rows="10" cols="60" maxlength="1500">
+SOBRE
+</textarea><br/><a href="#INÍCIO"><h3><font color="red">INÍCIO</font></h3></a><HR WIDTH="80%"><HR NOSHADE SIZE="3" color="#00FF00"><HR NOSHADE SIZE="8"><HR NOSHADE SIZE="3" color="red"><HR WIDTH="80%">
+<!--------------------------------------------------------------->
+
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
